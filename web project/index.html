@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Porject</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about_me">
+        <h2>Welcome to My Website</h2>
+        <p>This is a simple webpage to demonstrate HTML structure.</p>
+    </section>
+    <section id="projects">
+    <h2>Projects</h2>
+    <div id="project-filters">
+        <button class="filter-btn" data-category="all">Todos</button>
+        <button class="filter-btn" data-category="portfolio">Portfolio</button>
+        <button class="filter-btn" data-category="task">Task Manager</button>
+        <button class="filter-btn" data-category="blog">Blog</button>
+    </div>
+    <article class="project" data-category="portfolio">
+        <figure>
+            <img src="project_1.png" alt="Screenshot of Project 1" width="300">
+            <figcaption>Project 1: Portfolio Website</figcaption>
+        </figure>
+        <p>A personal portfolio website showcasing my skills and projects.</p>
+    </article>
+    <article class="project" data-category="task">
+        <figure>
+            <img src="project_2.png" alt="Screenshot of Project 2" width="300">
+            <figcaption>Project 2: Task Manager App</figcaption>
+        </figure>
+        <p>A web application to manage daily tasks efficiently.</p>
+    </article>
+    <article class="project" data-category="blog">
+        <figure>
+            <img src="project_3.png" alt="Screenshot of Project 3" width="300">
+            <figcaption>Project 3: Blog Platform</figcaption>
+        </figure>
+        <p>A simple blog platform for sharing articles and tutorials.</p>
+    </article>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" class="contact-form" action="#" method="post">
+            <div class="contact-form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="contact-form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="contact-form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
